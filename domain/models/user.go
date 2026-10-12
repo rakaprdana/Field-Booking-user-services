@@ -8,9 +8,10 @@ import (
 
 type User struct {
 	ID          uint      `gorm:"primaryKey;autoIncrement"`
-	UUI         uuid.UUID `gorm:"type:uuid;not null"`
+	UUID        uuid.UUID `gorm:"type:uuid;not null"`
 	Name        string    `gorm:"type:varchar(100);not null"`
-	Pass        string    `gorm:"type:varchar(100);not null"`
+	Username    string    `gorm:"type:varchar(100);not null"`
+	Password    string    `gorm:"type:varchar(50);not null"`
 	PhoneNumber string    `gorm:"type:varchar(20);not null"`
 	Email       string    `gorm:"type:varchar(50);not null"`
 	RoleID      uint      `gorm:"type:uint;not null"`

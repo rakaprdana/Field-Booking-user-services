@@ -10,8 +10,8 @@ import (
 )
 
 type ValidationResponse struct {
-	Field   string `json:"field, omitempty"`
-	Message string `json:"message, omitempty"`
+	Field   string `json:"field,omitempty"`
+	Message string `json:"message,omitempty"`
 }
 
 var ErrValidatior = map[string]string{}

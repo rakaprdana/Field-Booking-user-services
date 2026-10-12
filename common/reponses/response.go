@@ -12,7 +12,7 @@ type Response struct {
 	Status  string      `json:"status"`
 	Message any         `json:"message"`
 	Data    interface{} `json:"data"`
-	Token   *string     `json:"token", omitempty`
+	Token   *string     `json:"token,omitempty"`
 }
 
 type ParamHTTPResp struct {
