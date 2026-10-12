@@ -2,8 +2,8 @@ package reponses
 
 import (
 	"net/http"
-	"user-service/constants"
-	"user-service/constants/errors"
+	"user-services/constants"
+	"user-services/constants/errors"
 
 	"github.com/gin-gonic/gin"
 )
